@@ -1,0 +1,14 @@
+ERROR: line 1
+000 0
+ERROR: line 2
+010 0
+ERROR: line 3
+100 1
+ERROR: line 4
+110 0
+ERROR: line 5
+001 1
+011 0
+ERROR: line 7
+101 0
+111 1

@@ -1,0 +1,206 @@
+|DUT
+input_vector[0] => Adder_Subtractor:add_instance.M
+input_vector[1] => Adder_Subtractor:add_instance.B[0]
+input_vector[2] => Adder_Subtractor:add_instance.B[1]
+input_vector[3] => Adder_Subtractor:add_instance.B[2]
+input_vector[4] => Adder_Subtractor:add_instance.B[3]
+input_vector[5] => Adder_Subtractor:add_instance.A[0]
+input_vector[6] => Adder_Subtractor:add_instance.A[1]
+input_vector[7] => Adder_Subtractor:add_instance.A[2]
+input_vector[8] => Adder_Subtractor:add_instance.A[3]
+output_vector[0] << Adder_Subtractor:add_instance.S[0]
+output_vector[1] << Adder_Subtractor:add_instance.S[1]
+output_vector[2] << Adder_Subtractor:add_instance.S[2]
+output_vector[3] << Adder_Subtractor:add_instance.S[3]
+output_vector[4] << Adder_Subtractor:add_instance.Cout
+
+
+|DUT|Adder_Subtractor:add_instance
+A[0] => Full_Adder:fulladder0.A
+A[1] => Full_Adder:fulladder1.A
+A[2] => Full_Adder:fulladder2.A
+A[3] => Full_Adder:fulladder3.A
+B[0] => XOR_2:xor0.B
+B[1] => XOR_2:xor1.B
+B[2] => XOR_2:xor2.B
+B[3] => XOR_2:xor3.B
+M => XOR_2:xor3.A
+M => XOR_2:xor2.A
+M => XOR_2:xor1.A
+M => XOR_2:xor0.A
+M => Full_Adder:fulladder0.Cin
+S[0] <= Full_Adder:fulladder0.S
+S[1] <= Full_Adder:fulladder1.S
+S[2] <= Full_Adder:fulladder2.S
+S[3] <= Full_Adder:fulladder3.S
+Cout <= Full_Adder:fulladder3.Cout
+
+
+|DUT|Adder_Subtractor:add_instance|XOR_2:xor3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|XOR_2:xor2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|XOR_2:xor0
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder0
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder0|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder0|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder0|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder0|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Adder_Subtractor:add_instance|Full_Adder:fulladder3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

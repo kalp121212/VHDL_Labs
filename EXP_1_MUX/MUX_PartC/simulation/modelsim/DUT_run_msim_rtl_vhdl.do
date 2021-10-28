@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/kalp/EE214_Lab/MUX_PartC/DUT.vhdl}
+vcom -93 -work work {/home/kalp/EE214_Lab/MUX_PartC/gates.vhdl}
+vcom -93 -work work {/home/kalp/EE214_Lab/MUX_PartC/MUX.vhdl}
+
+vcom -93 -work work {/home/kalp/EE214_Lab/MUX_PartC/Testbench.vhdl}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  testbench
+
+add wave *
+view structure
+view signals
+run -all

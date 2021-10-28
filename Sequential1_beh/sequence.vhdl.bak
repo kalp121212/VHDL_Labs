@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.flipflop.all; 
+
+entity sequence_generator_structural is
+port (reset,clock: in std_logic;
+y:out std_logic_vector(2 downto 0));
+end entity sequence_generator_structural;
+architecture struct of sequence_generator_structural is 
+signal D2,D1,D0 :std_logic;
+signal Q:std_logic_vector(2 downto 0);
+begin
+-- write the equations here
+D2<=
+D1<= 
+D0<=
+y(2)<=
+y(1)<= 
+y(0)<=
+
+-- Do the port mapping                          --asynchronous reset
+--Q0
+dff_0  : dff0 port map();
+
+--Q1
+dff_1  : dff1 port map();
+
+--Q2
+dff_2  : dff2 port map();
+
+
+end struct;

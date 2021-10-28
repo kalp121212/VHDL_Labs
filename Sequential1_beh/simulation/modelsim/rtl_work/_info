@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kalp/EE214_Lab/Sequential1/simulation/modelsim
+Edut
+Z1 w1632824088
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8/home/kalp/EE214_Lab/Sequential1/DUT.vhdl
+Z5 F/home/kalp/EE214_Lab/Sequential1/DUT.vhdl
+l0
+L5 1
+Vo<B1Ro@S4;;V4QkIHE;M83
+!s100 EV?Flf^C[bQhKo97bLgNQ1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632824670
+!i10b 1
+Z8 !s108 1632824670.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1/DUT.vhdl|
+Z10 !s107 /home/kalp/EE214_Lab/Sequential1/DUT.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 o<B1Ro@S4;;V4QkIHE;M83
+!i122 1
+l15
+L10 16
+VLZ[118Le<fbZ]E8ZHI_Rd1
+!s100 J7o:TjJj<ifdFYk4E32d12
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_behavior
+Z13 w1632824596
+R2
+R3
+!i122 0
+R0
+Z14 8/home/kalp/EE214_Lab/Sequential1/sequence.vhdl
+Z15 F/home/kalp/EE214_Lab/Sequential1/sequence.vhdl
+l0
+L4 1
+V1c=0HNYlCUWb88WNo_YjC0
+!s100 oNdXK]24ROAdPP[ZzYK`K0
+R6
+31
+Z16 !s110 1632824669
+!i10b 1
+Z17 !s108 1632824669.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1/sequence.vhdl|
+Z19 !s107 /home/kalp/EE214_Lab/Sequential1/sequence.vhdl|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 17 sequence_behavior 0 22 1c=0HNYlCUWb88WNo_YjC0
+!i122 0
+l14
+L9 40
+VUk<2L^?WDCA1ZR@GLbnTo3
+!s100 m7MX7k[lQaZi@8gZ]<d@X0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Etestbench
+Z20 w1632819290
+R3
+R2
+!i122 2
+R0
+Z21 8/home/kalp/EE214_Lab/Sequential1/Testbench.vhdl
+Z22 F/home/kalp/EE214_Lab/Sequential1/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1/Testbench.vhdl|
+!s107 /home/kalp/EE214_Lab/Sequential1/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+V4S`IBnQofbl?2P`jIEDBo1
+!s100 W_^_0J7;F1mfFKXmKlg6g1
+R6
+31
+R7
+!i10b 1
+R8
+R23
+Z24 !s107 /home/kalp/EE214_Lab/Sequential1/Testbench.vhdl|
+!i113 1
+R11
+R12

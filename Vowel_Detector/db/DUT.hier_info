@@ -1,0 +1,34 @@
+|DUT
+input_vector[0] => Vowel_Detector:add_instance.X[0]
+input_vector[1] => Vowel_Detector:add_instance.X[1]
+input_vector[2] => Vowel_Detector:add_instance.X[2]
+input_vector[3] => Vowel_Detector:add_instance.X[3]
+output_vector[0] << Vowel_Detector:add_instance.Y
+
+
+|DUT|Vowel_Detector:add_instance
+X[0] => NOR_2:NOR1.A
+X[1] => XOR_2:XOR1.B
+X[2] => AND_2:AND1.B
+X[3] => AND_2:AND1.A
+Y <= NOR_2:NOR1.Y
+
+
+|DUT|Vowel_Detector:add_instance|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Vowel_Detector:add_instance|XOR_2:XOR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Vowel_Detector:add_instance|NOR_2:NOR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,240 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kalp/EE214_Lab/Sequential1_struc/simulation/modelsim
+Edff1
+Z1 w1632927357
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8/home/kalp/EE214_Lab/Sequential1_struc/flipflop.vhdl
+Z5 F/home/kalp/EE214_Lab/Sequential1_struc/flipflop.vhdl
+l0
+L34 1
+Vf8E`T<o0^JcH;[U^G`GQN1
+!s100 8DccnCj1217?=n;3Lz?C;3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1633172342
+!i10b 1
+Z8 !s108 1633172341.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1_struc/flipflop.vhdl|
+Z10 !s107 /home/kalp/EE214_Lab/Sequential1_struc/flipflop.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 4 dff1 0 22 f8E`T<o0^JcH;[U^G`GQN1
+!i122 0
+l37
+L36 12
+VBSJ?fg6kAo_IR=dilPX>a1
+!s100 0c=0zLaVbWfzTHAi<:VFT3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L17 1
+VaFJM41W=9hWJ0]a9^zfac1
+!s100 DZdC;=CGM;9DfoNgXf8n80
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 4 dff2 0 22 aFJM41W=9hWJ0]a9^zfac1
+!i122 0
+l20
+L19 12
+Vo0HVVNW2?=9BhmAYMf84g1
+!s100 :JFOzD9f4CeCFc3G@^^M^0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1632925996
+R2
+R3
+!i122 1
+R0
+Z14 8/home/kalp/EE214_Lab/Sequential1_struc/DUT.vhdl
+Z15 F/home/kalp/EE214_Lab/Sequential1_struc/DUT.vhdl
+l0
+L5 1
+Vo<B1Ro@S4;;V4QkIHE;M83
+!s100 EV?Flf^C[bQhKo97bLgNQ1
+R6
+31
+R7
+!i10b 1
+Z16 !s108 1633172342.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1_struc/DUT.vhdl|
+Z18 !s107 /home/kalp/EE214_Lab/Sequential1_struc/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 o<B1Ro@S4;;V4QkIHE;M83
+!i122 1
+l15
+L10 16
+V1>gT=[_A<8hNIkm6WOdW:2
+!s100 68=dhgG>^E3<[TabgBD<@0
+R6
+31
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
+Pflipflop
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+V5hmIDTS><h<jMA46llC@a3
+!s100 RRcj@Cdo1]W2mWO^QgkZ@1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_struct
+Z19 w1632926675
+Z20 DPx4 work 8 flipflop 0 22 5hmIDTS><h<jMA46llC@a3
+R2
+R3
+!i122 2
+R0
+Z21 8/home/kalp/EE214_Lab/Sequential1_struc/sequence.vhdl
+Z22 F/home/kalp/EE214_Lab/Sequential1_struc/sequence.vhdl
+l0
+L6 1
+V1HLWG1n^HCZTW@7hDHGYT2
+!s100 JcjiSP6z8AE5V_]`PbMJ=2
+R6
+31
+R7
+!i10b 1
+R16
+Z23 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1_struc/sequence.vhdl|
+Z24 !s107 /home/kalp/EE214_Lab/Sequential1_struc/sequence.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R20
+R2
+R3
+DEx4 work 15 sequence_struct 0 22 1HLWG1n^HCZTW@7hDHGYT2
+!i122 2
+l13
+L10 24
+VEmG_3B6Tl?`9>b@k2eN^b1
+!s100 @c76d8]66X7V[`64dBeJD2
+R6
+31
+R7
+!i10b 1
+R16
+R23
+R24
+!i113 1
+R11
+R12
+Etestbench
+Z25 w1632819290
+R3
+R2
+!i122 3
+R0
+Z26 8/home/kalp/EE214_Lab/Sequential1_struc/Testbench.vhdl
+Z27 F/home/kalp/EE214_Lab/Sequential1_struc/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R16
+Z28 !s90 -reportprogress|300|-93|-work|work|/home/kalp/EE214_Lab/Sequential1_struc/Testbench.vhdl|
+!s107 /home/kalp/EE214_Lab/Sequential1_struc/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 3
+l69
+L9 132
+V4S`IBnQofbl?2P`jIEDBo1
+!s100 W_^_0J7;F1mfFKXmKlg6g1
+R6
+31
+R7
+!i10b 1
+R16
+R28
+Z29 !s107 /home/kalp/EE214_Lab/Sequential1_struc/Testbench.vhdl|
+!i113 1
+R11
+R12
